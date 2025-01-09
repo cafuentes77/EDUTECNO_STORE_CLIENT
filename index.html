@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,45 @@
 
     <script defer src="./src/main.js" type="module"></script>
 </head>
-<body>
-    <h1>Bienvenido a nuestra tienda</h1>
 
-    <div id="products"></div>
+<body>
+    <h1 class="register-section">Bienvenido a Nuestra Tienda</h1>
+
+    <section class="register-section">
+        <h2>Registrate</h2>
+
+        <form id="form-registro">
+            <div>
+                <label>Nombre</label>
+                <input id="registro-nombre" type="text" name="nombre" required>
+            </div>
+            <div>
+                <label>Apellido Paterno</label>
+                <input id="registro-apellido_paterno" type="text" name="apellido_paterno" required>
+            </div>
+            <div>
+                <label>Apellido Materno</label>
+                <input id="registro-apellido_materno" type="text" name="apellido_materno">
+            </div>
+            <div>
+                <label>email</label>
+                <input id="registro-email" type="email" name="email" required>
+            </div>
+            <div>
+                <label>telefono</label>
+                <input id="registro-telefono" type="text" name="telefono" required>
+            </div>
+
+            <button class="btn btn-registro" id="btn-registro" type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <section>
+        <div id="products"></div>
+    </section>
 
 
 
 </body>
+
 </html>

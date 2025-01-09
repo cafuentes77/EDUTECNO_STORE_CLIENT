@@ -9,11 +9,13 @@ export const createProductsCards = (products) => {
     <div class="card">
         <div class="card__header">
         <h3>${product.nombre}</h3>
-        <p>${product.id}</p>
         </div>
         <div class="card__body">
-        <p>Stock: ${product.descripcion}</p>
+        <p>Stock: ${product.stock}</p>
         <p>${formatPrice(product.precio)}</p>
+        </div>
+        <div class="card__footer">
+        <button class="btn-detail" data-id="${product.id}">Ver más</button>
         </div>
     </div>           
             `;
